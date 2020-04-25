@@ -7,10 +7,11 @@ class homescreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
-          'QUIZ APP',
-          style: TextStyle(
-            color: Colors.black87,
+        title: Center(
+          child: Text(
+            'QUIZ APP',
+            style:
+                TextStyle(color: Colors.black87, fontWeight: FontWeight.bold),
           ),
         ),
         backgroundColor: Colors.deepOrangeAccent,
@@ -36,11 +37,25 @@ class homescreen extends StatelessWidget {
                   Padding(
                     padding: EdgeInsets.all(20.0),
                     child: RaisedButton(
-                      child: Text(
-                        'Start Game',
-                        style: TextStyle(
-                          fontSize: 35.0,
-                        ),
+                      child: new Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisSize: MainAxisSize.min,
+                        children: <Widget>[
+                          Padding(
+                            padding: const EdgeInsets.all(2.0),
+                            child: new Image.asset('assets/images/ui.png',
+                                height: 30.0, width: 40.0),
+                          ),
+                          Padding(
+                            padding: EdgeInsets.only(left: 5.0),
+                            child: new Text(
+                              'Start Game',
+                              style: TextStyle(
+                                fontSize: 35.0,
+                              ),
+                            ),
+                          )
+                        ],
                       ),
                       color: Colors.green,
                       elevation: 10.0,
@@ -53,11 +68,26 @@ class homescreen extends StatelessWidget {
                   Padding(
                     padding: EdgeInsets.all(20.0),
                     child: RaisedButton(
-                      child: Text(
-                        'Levels',
-                        style: TextStyle(
-                          fontSize: 35.0,
-                        ),
+                      child: new Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisSize: MainAxisSize.min,
+                        // crossAxisAlignment: CrossAxisAlignment.end,
+                        children: <Widget>[
+                          Padding(
+                            padding: const EdgeInsets.only(top: 5.0),
+                            child: new Image.asset('assets/images/stair.png',
+                                height: 40.0, width: 40.0),
+                          ),
+                          Padding(
+                            padding: EdgeInsets.all(2.0),
+                            child: new Text(
+                              'Levels',
+                              style: TextStyle(
+                                fontSize: 35.0,
+                              ),
+                            ),
+                          )
+                        ],
                       ),
                       color: Colors.redAccent,
                       elevation: 10.0,
@@ -70,11 +100,25 @@ class homescreen extends StatelessWidget {
                   Padding(
                     padding: EdgeInsets.all(20.0),
                     child: RaisedButton(
-                      child: Text(
-                        'Share',
-                        style: TextStyle(
-                          fontSize: 35.0,
-                        ),
+                      child: new Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisSize: MainAxisSize.min,
+                        children: <Widget>[
+                          Padding(
+                            padding: const EdgeInsets.only(right: 10.0),
+                            child: new Image.asset('assets/images/share.png',
+                                height: 31.0, width: 40.0),
+                          ),
+                          Padding(
+                            padding: EdgeInsets.only(left: 10.0),
+                            child: new Text(
+                              'Share',
+                              style: TextStyle(
+                                fontSize: 35.0,
+                              ),
+                            ),
+                          )
+                        ],
                       ),
                       color: Colors.blue,
                       elevation: 10.0,
@@ -87,11 +131,22 @@ class homescreen extends StatelessWidget {
                   Padding(
                     padding: EdgeInsets.all(20.0),
                     child: RaisedButton(
-                      child: Text(
-                        'About Us',
-                        style: TextStyle(
-                          fontSize: 35.0,
-                        ),
+                      child: new Row(
+                        mainAxisSize: MainAxisSize.min,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+                          new Image.asset('assets/images/about.png',
+                              height: 30.0, width: 40.0),
+                          Padding(
+                            padding: EdgeInsets.only(left: 10.0),
+                            child: new Text(
+                              'About Us',
+                              style: TextStyle(
+                                fontSize: 35.0,
+                              ),
+                            ),
+                          )
+                        ],
                       ),
                       color: Colors.blueGrey.shade500,
                       elevation: 10.0,
@@ -104,11 +159,22 @@ class homescreen extends StatelessWidget {
                   Padding(
                     padding: EdgeInsets.all(20.0),
                     child: RaisedButton(
-                      child: Text(
-                        'Exit',
-                        style: TextStyle(
-                          fontSize: 35.0,
-                        ),
+                      child: new Row(
+                        mainAxisSize: MainAxisSize.min,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+                          new Image.asset('assets/images/logout.png',
+                              height: 30.0, width: 40.0),
+                          Padding(
+                            padding: EdgeInsets.only(left: 10.0),
+                            child: new Text(
+                              'Exit',
+                              style: TextStyle(
+                                fontSize: 35.0,
+                              ),
+                            ),
+                          )
+                        ],
                       ),
                       color: Colors.yellow,
                       elevation: 10.0,

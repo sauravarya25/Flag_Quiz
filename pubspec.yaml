@@ -44,7 +44,11 @@ flutter:
   assets:
    - assets/images/bg.jpg
    - assets/images/back.jpg
-   - - assets/images/ui.png
+   - assets/images/ui.png
+   - assets/images/logout.png
+   - assets/images/share.png
+   - assets/images/stair.png
+   - assets/images/about.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
