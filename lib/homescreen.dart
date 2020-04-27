@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flagquiz/mainScreen.dart';
+import 'mainScreen.dart';
 
 class homescreen extends StatelessWidget {
   @override
@@ -10,8 +12,11 @@ class homescreen extends StatelessWidget {
         title: Center(
           child: Text(
             'QUIZ APP',
-            style:
-                TextStyle(color: Colors.black87, fontWeight: FontWeight.bold),
+            style: TextStyle(
+              color: Colors.black87,
+              fontWeight: FontWeight.bold,
+              // fontFamily: "Pacifico",
+            ),
           ),
         ),
         backgroundColor: Colors.deepOrangeAccent,
@@ -62,7 +67,12 @@ class homescreen extends StatelessWidget {
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(50.0),
                       ),
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => MainScreen()));
+                      },
                     ),
                   ),
                   Padding(
